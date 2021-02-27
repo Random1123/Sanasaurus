@@ -1,1 +1,1 @@
-web: gunicorn app: sanasaurus
+web: gunicorn app:app
