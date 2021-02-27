@@ -283,8 +283,8 @@ def results(gameId):
         playerString = "<p> Tulokset: </p>"
 
         for j in multiGames[gameId].gameDict.keys():
-
-                playerString += "<p>" + j + ": " + str(len(multiGames[gameId].gameDict[j].words)) + "</p>"  
+                w = multiGames[gameId].gameDict[j].words
+                playerString += "<div><p>" + j + ": " + str(len(w)) + "</p>" + "<p><small>" + ", ".join(w) + "</small></p>" + "</div>"  
 
         return playerString
 
